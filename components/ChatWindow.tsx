@@ -309,7 +309,8 @@ class ChatWindow extends React.Component<Props, State> {
     const plan = payload && payload.plan;
     const shouldHideBranding = settings && settings.is_branding_hidden;
     const isTeamPlan = plan && String(plan).toLowerCase() === 'team';
-    const shouldDisplayBranding = !(isTeamPlan && shouldHideBranding);
+    //const shouldDisplayBranding = !(isTeamPlan && shouldHideBranding);
+    const shouldDisplayBranding = false;
 
     this.setState({shouldDisplayBranding});
   };

@@ -2,7 +2,8 @@ import * as Sentry from '@sentry/react';
 
 const SENTRY_DSN = process.env.SENTRY_DSN;
 
-export const isSentryEnabled = !!SENTRY_DSN;
+//export const isSentryEnabled = !!SENTRY_DSN;
+export const isSentryEnabled = false;
 
 export const init = () => {
   if (isSentryEnabled) {
