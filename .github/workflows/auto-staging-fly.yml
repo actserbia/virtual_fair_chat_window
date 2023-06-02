@@ -1,0 +1,27 @@
+name: Staging autodeploy vf-stage-chat
+
+on:
+  push:
+    branches: [ "staging" ]
+
+jobs:
+  deploy:
+    name: Deploy app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy -c fly_stage.toml --remote-only
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_STAGING }}
+
+      - name: Microsoft Teams Notification
+        uses: skitionek/notify-microsoft-teams@master
+        if: always()
+        with:
+            webhook_url: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+            needs: ${{ toJson(needs) }}
+            job: ${{ toJson(job) }}
+            steps: ${{ toJson(steps) }}
+            overwrite: "{title: `STAGING VF-CHAT / FLY.IO DEPLOY -- ${{ github.repository }} ${sender.login} ${eventName} initialised workflow ${workflow}`}"
+
