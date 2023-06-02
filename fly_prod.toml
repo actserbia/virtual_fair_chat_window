@@ -1,4 +1,4 @@
-app = "vf-stage-chat"
+app = "vf-chat"
 primary_region = "otp"
 
 [build]
