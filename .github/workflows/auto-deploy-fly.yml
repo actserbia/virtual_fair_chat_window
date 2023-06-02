@@ -1,8 +1,8 @@
-name: Staging autodeploy vf-stage-chat
+name: Staging autodeploy vf-chat
 
 on:
   push:
-    branches: [ "staging" ]
+    branches: [ "main" ]
 
 jobs:
   deploy:
