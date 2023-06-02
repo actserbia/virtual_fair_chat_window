@@ -1,6 +1,7 @@
 {
-  "name": "chat-window",
-  "version": "0.0.1",
+  "name": "virtual-fair-chat",
+  "private": true,
+  "version": "0.1.0",
   "engines": {
     "node": "12.18.3",
     "npm": "6.14.6"
@@ -41,18 +42,18 @@
     "theme-ui": "^0.3.1",
     "tinycolor2": "^1.4.1",
     "use-composed-ref": "^1.1.0",
-    "use-latest": "^1.2.0"
-  },
-  "devDependencies": {
+    "use-latest": "^1.2.0",
     "@types/node": "^14.0.23",
     "@types/phoenix": "^1.5.0",
     "@types/react": "^16.9.43",
     "@types/superagent": "^4.1.8",
     "@types/theme-ui": "^0.3.6",
     "@types/tinycolor2": "^1.4.2",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.7"
+    "prettier": "^2.0.5"
   }
 }
