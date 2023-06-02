@@ -23,5 +23,5 @@ jobs:
             needs: ${{ toJson(needs) }}
             job: ${{ toJson(job) }}
             steps: ${{ toJson(steps) }}
-            overwrite: "{title: `STAGING VF-CHAT / FLY.IO DEPLOY -- ${{ github.repository }} ${sender.login} ${eventName} initialised workflow ${workflow}`}"
+            overwrite: "{title: `VF-CHAT / FLY.IO DEPLOY -- ${{ github.repository }} ${sender.login} ${eventName} initialised workflow ${workflow}`}"
 
