@@ -2,6 +2,10 @@
   "name": "virtual-fair-chat",
   "private": true,
   "version": "0.1.0",
+  "engines": {
+    "node": "12.18.3",
+    "npm": "6.14.6"
+  },
   "scripts": {
     "dev": "next dev -p 8080",
     "build": "next build",
