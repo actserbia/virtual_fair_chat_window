@@ -1,6 +1,6 @@
 # Dockerfile
-FROM node:12.18.3-alpine
-
+FROM node:16.18.0-alpine
+RUN npm install -g npm@6.14.6
 # Set environment to production
 ENV NODE_ENV=production
 # Copy the configuration files
