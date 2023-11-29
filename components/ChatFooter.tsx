@@ -117,7 +117,7 @@ const ChatFooter = ({
           </Box>
 
           <Flex>
-           {/*  <Upload
+            <Upload
               action={`${baseUrl}/api/upload`}
               data={{account_id: accountId}}
               headers={{'X-Requested-With': null}}
@@ -145,7 +145,7 @@ const ChatFooter = ({
                   fill={error ? 'red' : 'gray'}
                 />
               </Button>
-            </Upload>*/}
+            </Upload>
 
             <Button
               variant="primary"
