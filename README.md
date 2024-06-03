@@ -21,3 +21,5 @@ You can start editing the page by modifying the components in the `/components` 
 You'll notice when you start up the code from scratch that nothing gets rendered initially. This is because this component requires certain query params to be set in order to render.
 
 The easiest way to develop within this repo is by running it alongside the [@papercups-io/chat-widget](https://github.com/papercups-io/chat-widget) repo. See the instructions there for more information: https://github.com/papercups-io/chat-widget
+
+## 
